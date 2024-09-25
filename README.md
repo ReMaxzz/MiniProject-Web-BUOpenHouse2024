@@ -1,8 +1,6 @@
 # MiniProject-Web-BUOpenHouse2024
 For study
 
-หน้าที่รับผิดชอบ
-
 # Jirat 1650707357
 Homepage,
 About the Open House,
