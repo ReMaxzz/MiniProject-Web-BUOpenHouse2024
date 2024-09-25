@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Speaker</title>
+    <link rel="stylesheet" href="CSS/speaker.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Logo Section -->
+      <header class="logo-container">
+        <a href="Homepage.html" class="logo-button">
+          <img
+            src="https://www.bu.ac.th/dist/images/bu_logo.svg?id=fe297612ed50604160bdb404bdf44861"
+            alt="Bangkok University Logo"
+            class="bu-logo"
+          />
+        </a>
+      </header>
+
+      <!-- Navigation Menu -->
+      <div class="navbar">
+        <div class="dropdown">
+          <a href="About.html">About</a>
+          <div class="dropdown-content">
+            <a href="About.html">About The Open house</a>
+            <a href="About IT department.html">About IT department</a>
+            <a href="News for IT department.html">News for IT department</a>
+          </div>
+        </div>
+        <a href="Schedule.html">Schedule</a>
+        <a href="Speaker.html">Speaker</a>
+        <a href="Workshops.html">Workshops and Activities</a>
+        <a href="Gallery.html">Gallery</a>
+        <div class="dropdown">
+          <a href="FAQ.html">FAQ</a>
+          <div class="dropdown-content">
+            <a href="Contact US.html">Contact US</a>
+            <a href="Sponsors.html">Sponsors and Partners</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Register Button -->
+      <div
+        class="register-button"
+        onclick="window.location.href='Register.html';"
+      >
+        Register now!!
+      </div>
+
+      <!-- Main Content -->
+      <div class="main-text">
+        <h1>Speaker Profiles</h1>
+      </div>
+
+      <div class="profile-box">
+        <div class="profile">
+          <img src="image/lecturer_01.jpg" class="profile-photo" />
+          <div class="box-detail">
+            <h2>ดร.ธนกร หวังพิพัฒน์วงศ์</h2>
+            <p>
+              Bangkok Commercial Asset Management Public Company Limited -
+              รองประธานเจ้าหน้าที่บริหาร
+            </p>
+            <p>( วิทยากรพิเศษ )</p>
+            <p>ทําโครงการบ่มเพาะนักศึกษา</p>
+            <li>สร้างโอกาสการได้งานทําและมีรายได้ระหว่างเรียน</li>
+          </div>
+        </div>
+      </div>
+
+      <div class="profile-box2">
+        <div class="profile">
+          <img src="image/lecturer_02.jpg" class="profile-photo" />
+          <div class="box-detail2">
+            <h2>คุณพีรพัทธ์ จารุเพียรเลิศ</h2>
+            <p>Asset World Corporation - IT Project and Portfolio Management</p>
+            <p>( วิทยากรพิเศษ )</p>
+            <p>มีความเชี่ยวชาญด้าน</p>
+            <li>SAP</li>
+            <li>ERP</li>
+            <li>RPA</li>
+          </div>
+        </div>
+      </div>
+
+      <div class="profile-box3">
+        <div class="profile">
+          <img src="image/lecturer_03.jpg" class="profile-photo" />
+          <div class="box-detail3">
+            <h2>คุณริคก์ อีห์มัน</h2>
+            <p>Ever Medical Technologies - Senior Software Engineer</p>
+            <p>( วิทยากรพิเศษ )</p>
+            <p>มีความเชี่ยวชาญด้าน</p>
+            <li>React</li>
+            <li>React Native</li>
+            <li>Typescript</li>
+            <li>Next.js</li>
+            <li>Vue.js</li>
+            <li>Node.js</li>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ribbon Element (Right) -->
+      <div class="ribbon">
+        <img src="image/3.png" />
+      </div>
+      <div class="light">
+        <img src="image/4.png" />
+      </div>
+    </div>
+    <script>
+      fetch("navbar.html")
+        .then((Response) => Response.text())
+        .then((data) => (document.getElementById("navbar").innerHTML = data));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact US</title>
+    <link rel="stylesheet" href="CSS/Contact US.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Logo Section -->
+      <header class="logo-container">
+        <a href="Homepage.html" class="logo-button">
+          <img
+            src="https://www.bu.ac.th/dist/images/bu_logo.svg?id=fe297612ed50604160bdb404bdf44861"
+            alt="Bangkok University Logo"
+            class="bu-logo"
+          />
+        </a>
+      </header>
+
+      <!-- Navigation Menu -->
+      <div class="navbar">
+        <div class="dropdown">
+          <a href="About.html">About</a>
+          <div class="dropdown-content">
+            <a href="About.html">About The Open house</a>
+            <a href="About IT department.html">About IT department</a>
+            <a href="News for IT department.html">News for IT department</a>
+          </div>
+        </div>
+        <a href="Schedule.html">Schedule</a>
+        <a href="Speaker.html">Speaker</a>
+        <a href="Workshops.html">Workshops and Activities</a>
+        <a href="Gallery.html">Gallery</a>
+        <div class="dropdown">
+          <a href="FAQ.html">FAQ</a>
+          <div class="dropdown-content">
+            <a href="Contact US.html">Contact US</a>
+            <a href="Sponsors.html">Sponsors and Partners</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Register Button -->
+      <div
+        class="register-button"
+        onclick="window.location.href='Register.html';"
+      >
+        Register now!!
+      </div>
+
+      <!-- Main Content -->
+      <div class="contact-section">
+        <h1>Contact Us</h1>
+
+        <p>
+          Facebook:
+          <a href="https://www.facebook.com/BUITInnovation" target="_blank"
+            >BU IT Innovation</a
+          >
+        </p>
+        <p>Phone: 02 407 3888</p>
+        <p>Email: <a href="mailto:iti@bu.ac.th">iti@bu.ac.th</a></p>
+        <p>
+          Website:
+          <a href="https://www.bu.ac.th/it-innovation" target="_blank"
+            >bu.ac.th/it-innovation</a
+          >
+        </p>
+      </div>
+
+      <!-- Ribbon Element (Right) -->
+      <div class="ribbon">
+        <img src="image/3.png" />
+      </div>
+      <div class="light">
+        <img src="image/4.png" />
+      </div>
+    </div>
+    <script>
+      fetch("navbar.html")
+        .then((Response) => Response.text())
+        .then((data) => (document.getElementById("navbar").innerHTML = data));
+    </script>
+  </body>
+</html>

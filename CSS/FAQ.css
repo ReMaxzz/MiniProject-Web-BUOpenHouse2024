@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    overflow-x: hidden;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* Logo Section */
+.logo-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+
+.bu-logo {
+    width: 200px;
+}
+
+.logo-button {
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    z-index: 2;
+  }
+
+  .logo-button img {
+    height: 40px;
+    width: auto;
+  }
+
+/* Main Navigation Bar */
+.navbar {
+    position: absolute;
+    top: 40px;
+    text-align: center;
+    display: flex;
+    gap: 40px;
+    font-size: 18px;
+    z-index: 2;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar a:hover {
+color: #0071e3;
+}
+
+/* Dropdown Menu Styles */
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: white;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+padding: 10px;
+min-width: 200px;
+border-radius: 25px;
+z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+font-size: 14px;
+}
+
+.dropdown-content a:hover {
+background-color: #f1f1f1;
+}
+
+/* Register Button */
+.register-button {
+    position: absolute;
+    top: 35px;
+    right: 20px;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.register-button:hover {
+    background-color: #ccc;
+}
+
+
+/* Main Text */
+.content h1 {
+    font-size: 64px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Ribbon (Right) */
+.ribbon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    z-index: 1;
+}
+.light {
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    z-index: 1;
+}
+.background-shape {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 90%;
+    height: 70vh;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    border-radius: 20px; /* Rounded corners */
+    backdrop-filter: blur(10px); /* Background blur */
+    text-align: center;
+    color: #ffffff;
+    margin: 100px auto; /* Center it */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Optional shadow for effect */
+    padding: 20px;
+    border-radius: 40px;
+    z-index: 1;
+}
+
+.faq-list {
+    max-width: 600px; /* Adjust max-width based on your design */
+    margin: 0 auto; /* Centers the list */
+}
+
+.faq-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.faq-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 15px 10px;
+    border-bottom: 1px solid #ddd;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    justify-content: center; /* Centers the item content */
+}
+
+.faq-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.number {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-right: 20px;
+}
+
+.content h2 {
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+.content .detail {
+    font-size: 1rem;
+    color: #ffffff;
+    display: none;
+    margin-top: 5px;
+    line-height: 1.5;
+}
+
+.faq-item:hover .content .detail {
+    display: block;
+}
+
+.faq-item:hover {
+    padding: 20px 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    transition: all 0.4s ease;
+}
+
+/* Optional: If you want to center the text inside each .faq-item */
+.faq-item {
+    flex-direction: column; /* Stack number and content vertically */
+    text-align: center;
+    align-items: center;
+}
+
+.a{
+    color: red;
+}
+.a :hover{
+    color: red;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sponsors</title>
+    <link rel="stylesheet" href="CSS/sponsors.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Logo Section -->
+        <header class="logo-container">
+            <a href="Homepage.html" class="logo-button">
+              <img
+                src="https://www.bu.ac.th/dist/images/bu_logo.svg?id=fe297612ed50604160bdb404bdf44861"
+                alt="Bangkok University Logo"
+                class="bu-logo"
+              />
+            </a>
+          </header>
+
+        <!-- Navigation Menu -->
+        <div class="navbar">
+            <div class="dropdown">
+              <a href="About.html">About</a>
+              <div class="dropdown-content">
+                <a href="About.html">About The Open house</a>
+                <a href="About IT department.html">About IT department</a>
+                <a href="News for IT department.html">News for IT department</a>
+              </div>
+            </div>
+            <a href="Schedule.html">Schedule</a>
+            <a href="Speaker.html">Speaker</a>
+            <a href="Workshops.html">Workshops and Activities</a>
+            <a href="Gallery.html">Gallery</a>
+            <div class="dropdown">
+              <a href="FAQ.html">FAQ</a>
+              <div class="dropdown-content">
+                <a href="Contact US.html">Contact US</a>
+                <a href="Sponsors.html">Sponsors and Partners</a>
+              </div>
+            </div>
+          </div>
+
+        <!-- Register Button -->
+        <div
+        class="register-button"
+        onclick="window.location.href='Register.html';"
+      >
+        Register now!!
+      </div>
+
+        <!-- Main Content -->
+        <div class="content">
+            <div><h1 class="typing">Sponsors and Partners by</div>
+        </div>
+
+        <!-- Ribbon Element (Right) -->
+        <div class="ribbon">
+            <img src="image/3.png">
+        </div>
+        <div class="light">
+            <img src="image/4.png">
+        </div>
+        <div class="sponser">
+            <img src="image/mixue.jpg" alt="sponsor img">
+            <img src="image/chaosua.jpg" alt="sponsor img">
+        </div>        
+    </div>
+    <script>
+        fetch("navbar.html")
+          .then((Response) => Response.text())
+          .then((data) => (document.getElementById("navbar").innerHTML = data));
+      </script>
+</body>
+</html>

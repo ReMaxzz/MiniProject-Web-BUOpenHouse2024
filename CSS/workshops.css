@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    overflow-x: hidden;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* Logo Section */
+.logo-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+
+.bu-logo {
+    width: 200px;
+}
+
+.logo-button {
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    z-index: 2;
+}
+
+.logo-button img {
+    height: 40px;
+    width: auto;
+}
+
+/* Ribbon (Right) */
+.ribbon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    z-index: 1;
+}
+.light {
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    z-index: 1;
+}
+
+/* Main Navigation Bar */
+.navbar {
+    position: absolute;
+    top: 40px;
+    left: 600px;
+    display: flex;
+    gap: 40px;
+    font-size: 18px;
+    z-index: 2;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar a:hover {
+    color: #0071e3;
+}
+
+/* Dropdown Menu Styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 10px;
+    min-width: 200px;
+    border-radius: 25px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Register Button */
+.register-button {
+    position: absolute;
+    top: 35px;
+    right: 20px;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.register-button:hover {
+    background-color: #ccc;
+}
+
+/* Main workshop */
+.main-text h1 {
+    font-size: 45px;
+    position: absolute;
+    text-align: center;
+    top: 17%; 
+    left: 35%; 
+    margin: 20px;
+    z-index: 2; 
+}
+
+.workshop h1{
+    font-size: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+    margin-bottom: 20px;
+}
+
+.workshop h1 span {
+    display: block;
+    font-size: 20px;
+}
+
+.workshop h2{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.worksohp-content{
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+    margin-bottom: 20px; 
+}
+
+.workshop-text{
+    flex: 2;
+    padding-right: 20px;
+}
+
+.workshop-box{
+    position: absolute;
+    z-index: 2;
+    top: 35%;
+    left: 10%;
+    width: 80%;
+    height: 85%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.workshop-box2{
+    position: absolute;
+    z-index: 2;
+    top: 125%;
+    left: 10%;
+    width: 80%;
+    height: 85%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.workshop-box3{
+    position: absolute;
+    z-index: 2;
+    top: 215%;
+    left: 10%;
+    width: 80%;
+    height: 85%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.workshop-box4{
+    position: absolute;
+    z-index: 2;
+    top: 305%;
+    left: 10%;
+    width: 80%;
+    height: 85%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.workshop-text p{
+    margin-top: auto;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.workshop-photo{
+    display: flex;
+    gap: 10px;
+    max-width: 50%;
+    border-radius: 10px;
+}
+
+.workshop-photo img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}

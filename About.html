@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Openhouse</title>
+    <link rel="stylesheet" href="CSS/About.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Logo Section -->
+      <header class="logo-container">
+        <a href="Homepage.html" class="logo-button">
+          <img
+            src="https://www.bu.ac.th/dist/images/bu_logo.svg?id=fe297612ed50604160bdb404bdf44861"
+            alt="Bangkok University Logo"
+            class="bu-logo"
+          />
+        </a>
+      </header>
+
+      <!-- Navigation Menu -->
+      <div class="navbar">
+        <div class="dropdown">
+          <a href="About.html">About</a>
+          <div class="dropdown-content">
+            <a href="About.html">About The Open house</a>
+            <a href="About IT department.html">About IT department</a>
+            <a href="News for IT department.html">News for IT department</a>
+          </div>
+        </div>
+        <a href="Schedule.html">Schedule</a>
+        <a href="Speaker.html">Speaker</a>
+        <a href="Workshops.html">Workshops and Activities</a>
+        <a href="Gallery.html">Gallery</a>
+        <div class="dropdown">
+          <a href="FAQ.html">FAQ</a>
+          <div class="dropdown-content">
+            <a href="Contact US.html">Contact US</a>
+            <a href="Sponsors.html">Sponsors and Partners</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Register Button -->
+      <div
+        class="register-button"
+        onclick="window.location.href='Register.html';"
+      >
+        Register now!!
+      </div>
+
+      <!-- Ribbon Element (Right) -->
+      <div class="ribbon">
+        <img src="image/3.png" />
+      </div>
+      <div class="light">
+        <img src="image/4.png" />
+      </div>
+    </div>
+    <div class="background-shape">
+      <div class="cards-container">
+        <!-- Card 1 -->
+        <div class="card">
+          <img src="image/a1.jpg" alt="Pro Center" class="card-image" />
+          <div class="card-content">
+            <h2>PRO-CENTER</h2>
+            <p>ลองรู้จักตัวเอง</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="image/a2.jpg" alt="Cluster Center" class="card-image" />
+          <div class="card-content">
+            <h2>CLUSTER CENTER</h2>
+            <p>ลองหาแฟชชั่น</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+          <img src="image/a3.jpg" alt="Pro Activities" class="card-image" />
+          <div class="card-content">
+            <h2>PRO-ACTIVITIES</h2>
+            <p>ลองฝึกทำจริง</p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+          <img src="image/a4.jpg" alt="Pro Certification" class="card-image" />
+          <div class="card-content">
+            <h2>PRO-CERTIFICATION</h2>
+            <p>ลองล่าใบเซอร์</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      fetch("navbar.html")
+        .then((Response) => Response.text())
+        .then((data) => (document.getElementById("navbar").innerHTML = data));
+    </script>
+  </body>
+</html>

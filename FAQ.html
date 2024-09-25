@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ</title>
+    <link rel="stylesheet" href="CSS/FAQ.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Logo Section -->
+      <header class="logo-container">
+        <a href="Homepage.html" class="logo-button">
+          <img
+            src="https://www.bu.ac.th/dist/images/bu_logo.svg?id=fe297612ed50604160bdb404bdf44861"
+            alt="Bangkok University Logo"
+            class="bu-logo"
+          />
+        </a>
+      </header>
+
+      <!-- Navigation Menu -->
+      <div class="navbar">
+        <div class="dropdown">
+          <a href="About.html">About</a>
+          <div class="dropdown-content">
+            <a href="About.html">About The Open house</a>
+            <a href="About IT department.html">About IT department</a>
+            <a href="News for IT department.html">News for IT department</a>
+          </div>
+        </div>
+        <a href="Schedule.html">Schedule</a>
+        <a href="Speaker.html">Speaker</a>
+        <a href="Workshops.html">Workshops and Activities</a>
+        <a href="Gallery.html">Gallery</a>
+        <div class="dropdown">
+          <a href="FAQ.html">FAQ</a>
+          <div class="dropdown-content">
+            <a href="Contact US.html">Contact US</a>
+            <a href="Sponsors.html">Sponsors and Partners</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Register Button -->
+      <div
+        class="register-button"
+        onclick="window.location.href='Register.html';"
+      >
+        Register now!!
+      </div>
+
+      <!-- Ribbon Element (Right) -->
+      <div class="ribbon">
+        <img src="image/7.png" />
+      </div>
+      <div class="light">
+        <img src="image/4.png" />
+      </div>
+    </div>
+    <div class="background-shape">
+      <h1>FAQ</h1>
+      <div class="faq-list">
+        <ul>
+          <li class="faq-item">
+            <span class="number">01</span>
+            <div class="content">
+              <h2>งาน BU Open House 2024 จัดขึ้นเมื่อไหร่และจัดที่ไหน?</h2>
+              <p class="detail">
+                มารวมตัวพร้อมกันได้ในวันที่ 29-31 สิงหาคม 2567 ณ
+                มหาวิทยาลัยกรุงเทพ Main campus (รังสิต)
+              </p>
+            </div>
+          </li>
+          <li class="faq-item">
+            <span class="number">02</span>
+            <div class="content">
+              <h2>การแต่งกาย ใส่ชุดอะไรไปดี?</h2>
+              <p class="detail">
+                มหาวิทยาลัยกรุงเทพเราเปิดรับความหลากหลาย
+                ทุกคนสามารถแต่งกายได้ทั้งเครื่องแบบสถาบัน
+                หรือชุดฟรีสไตล์ของตัวเอง แต่ยังสุภาพเหมาะสมกับสถานศึกษาได้เลย
+              </p>
+            </div>
+          </li>
+          <li class="faq-item">
+            <span class="number">03</span>
+            <div class="content">
+              <h2>เข้าร่วมงานต้องลงทะเบียนไหม?</h2>
+              <p class="detail">
+                สามารถลงทะเบียนเพื่อร่วมงาน BU OPEN HOUSE ล่วงหน้าได้ที่
+                <a href="file:///Users/sun/Documents/Miniproject/Register.html"
+                  >Register</a
+                >
+                หรือลงทะเบียนหน้างานได้ที่ PRO-CENTER บริเวณใต้ตึก A3
+              </p>
+            </div>
+          </li>
+          <li class="faq-item">
+            <span class="number">04</span>
+            <div class="content">
+              <h2>กิจกรรมคณะต่าง ๆ เริ่มตั้งแต่กี่โมงและสิ้นสุดเมื่อไหร่?</h2>
+              <p class="detail">
+                สําหรับกิจกรรมทุกคณะ จะเริ่มตั้งแต่เวลา 9.00-16.30 น.
+                และมีต่อกับกิจกรรมสุดพิเศษช่วงเย็นสําหรับคอนเสิร์ตและโชว์วงดนตรีที่เวทีกลางบริเวณโถงอาคาร
+                C6 หอสมุดสุรัตน์ โอสถานุเคราะห์ ตั้งแต่เวลา 17.00-20.00 น.
+              </p>
+            </div>
+          </li>
+          <li class="faq-item">
+            <span class="number">05</span>
+            <div class="content">
+              <h2>เลือกลงทะเบียนเข้าร่วมกิจกรรมได้กี่คณะ?</h2>
+              <p class="detail">
+                ลงทะเบียนครั้งเดียวสําหรับเข้าร่วมงาน BU OPEN HOUSE
+                แล้วสามารถดูตาราง กิจกรรมของคณะในคลัสเตอร์ต่าง ๆ
+                ได้ที่หน้าเว็บไซต์หากสนใจกิจกรรมไหนก็ สามารถไปสแกน QR Code
+                เข้าร่วมที่หน้ากิจกรรมของแต่ละคณะ/สาขาได้เลย
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script>
+      fetch("navbar.html")
+        .then((Response) => Response.text())
+        .then((data) => (document.getElementById("navbar").innerHTML = data));
+    </script>
+  </body>
+</html>
